@@ -6,7 +6,6 @@ from bokeh.models import ColumnDataSource, Range1d
 from bokeh.models import PanTool, WheelZoomTool, BoxZoomTool, ResetTool, HoverTool, SaveTool
 from bokeh.models.widgets import Select, Slider
 from bokeh.layouts import layout
-from bokeh.layouts import gridplot
 import pandas as pd
 import numpy as np
 
@@ -86,7 +85,6 @@ f.yaxis.axis_label = "Unemployment (% of labour force)"
 
 
 #create layout and add to curdoc
-# lay_out=layout([[slider]])
-lay_out = gridplot([[None, slider]])
+lay_out=layout([[slider]])
 curdoc().add_root(f)
 curdoc().add_root(lay_out)
