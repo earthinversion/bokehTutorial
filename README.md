@@ -16,6 +16,7 @@ Install all the libraries using conda in a separate environment:
 8. Bokeh layouts - column, row, gridplot
 9. Bokeh widgets - Tabs, Panel
 10. Selecting data points in the bokeh figure
+11. Linking Plots
 
 ## Real World Examples
 Other than the basic introduction, this tutorial includes two examples:
