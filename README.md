@@ -20,6 +20,16 @@ Install all the libraries using conda in a separate environment:
 ## Real World Examples
 Other than the basic introduction, this tutorial includes two examples:
 1. Plot of the Earthquake events (the event information are obtained using the FDSN service from Obspy package)
+
+`python EQviz.py` for the plot without widgets
+
+`bokeh serve EQviz_with_widgets.py` for plot with the input box for the starting and end year for the search of events. This is quite slow as the program need to request data using the Obspy method each time.
+
+
 2. Interactive plot of the global population statistics. Introduction of the slider widget. The widgets can be similarly implemented. To execute this program, you need to run it on the bokeh server using the command:
 
 `bokeh serve plot_global_stats.py`
+
+3. Streaming random data: randomly plot 10 circles glyphs.
+
+`bokeh serve streaming_data.py`
